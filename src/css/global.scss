@@ -1,0 +1,44 @@
+.location-container {
+  height: 750px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.test {
+  border: 1px solid black;
+}
+
+.save-icon {
+  font-size: 40px !important;
+  color: #2780e3;
+}
+
+$pat-blue: #0b73bb;
+
+.blue {
+  background-color: $pat-blue;
+}
+
+.save-icon:hover {
+  box-shadow: 0 0.25rem 2rem -0.5rem rgba(28, 75, 102, 0.3);
+  background-color: #fff;
+  color: #000 !important;
+  border-color: rgba(5, 37, 48, 0.01);
+}
+
+.activity-container {
+  height: 450px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /*display: inline-block;*/
+}
+
+.text-break {
+  /*overflow-wrap: break-word;*/
+  white-space: normal;
+}
+
+.activity-item {
+  /*display: inline-block;*/
+  max-height: 300px !important;
+}

@@ -1,0 +1,129 @@
+/* Designer credit: https://dribbble.com/shots/1978243-Latest-News */
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.app-header {
+  display: block;
+  padding: 30px;
+}
+
+.app-title {
+  display: inline-block;
+  width: 100%;
+  margin: 80px 0 0 0;
+  float: left;
+  position: relative;
+  color: #fff;
+
+  @media (min-width: 768px) {
+    width: 20%;
+    margin: 280px 0 0 0;
+  }
+
+  h1 {
+    font-size: 52px;
+    margin: 0;
+  }
+
+  p {
+    font-weight: 200;
+    opacity: 0.5;
+  }
+}
+
+// .app-title-content {
+//   position: relative;
+//   top: 50%;
+//   left: 50%;
+//   width: 100%;
+//   text-align: center;
+//   transform: translate(-50%, -50%);
+
+//   @media (min-width: 768px) {
+//     width: auto;
+//     position: absolute;
+//     text-align: left;
+//   }
+// }
+
+.app-title-content {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+}
+
+.app-title-content a {
+  margin-left: 10px;
+  margin-top: 12px;
+}
+
+.marginLeft15 {
+  margin-left: 15px;
+}
+.marginRight10 {
+  margin-right: 10px;
+}
+
+.marginTop15 {
+  margin-top: 15px;
+}
+
+.marginBottom15 {
+  margin-bottom: 15px;
+}
+
+.app-card-list {
+  display: inline-block;
+  width: 100%;
+  // float: right;
+  margin: 0;
+  // min-height: 75vh;
+  white-space: normal;
+  overflow-x: scroll;
+  margin-top: -70px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    width: 80%;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 100px) and (max-width: 699px) {
+    .card {
+      margin: 10px 15px;
+    }
+  }
+
+  @media (min-width: 699px) {
+    .card {
+      margin: 60px 15px;
+    }
+  }
+
+  .card {
+    display: inline-block;
+    width: 328px;
+    .card-body {
+      white-space: normal;
+    }
+  }
+}
+
+.designer-link {
+  display: inline-block;
+  padding-top: 40px;
+}
+
+.flex {
+  display: flex;
+}
+
+.floatRight {
+  float: right;
+}

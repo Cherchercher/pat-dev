@@ -1,0 +1,63 @@
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 500px !important;
+}
+.scrolling-wrapper .card {
+  display: inline-block;
+}
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.scrolling-wrapper-flexbox .card {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+.card {
+  border: 1px solid white;
+  background: black;
+}
+
+.cardImg {
+  height: 150px !important;
+  min-width: 200px !important;
+  min-height: 150px !important;
+}
+
+.force-to-bottom {
+  position:absolute;
+  bottom: 5%;
+  width: 100%;
+}
+
+
+.activity-card {
+  min-height: 200px !important;
+  width: 250px !important;
+  margin: 0 20px 0 20px;
+}
+
+
+.imgStyle {
+transform: 'translateY(-50%)';
+transform: 'translateX(-20%)';
+position: 'relative';
+height: 'auto';
+width: '100%';
+top: '50%';
+}
+
+.cat {
+  float: left;
+}
+.scrolling-wrapper, .scrolling-wrapper-flexbox {
+  height: 75px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.scrolling-wrapper::-webkit-scrollbar, .scrolling-wrapper-flexbox::-webkit-scrollbar {
+  display: none;
+}

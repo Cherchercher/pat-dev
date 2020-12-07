@@ -1,0 +1,211 @@
+/*
+@File: StartP Template Styles
+
+* This file contains the styling for the actual tepmlate, this
+is the file you need to edit to change the look of the
+tepmlate.
+
+This files table contents are outlined below>>>>>
+
+*******************************************
+*******************************************
+
+==== INDEX PAGE CSS
+
+** - Default CSS
+** - Preloader CSS
+** - Navbar CSS
+** - Main Banner CSS
+** - Boxes CSS
+** - About CSS
+** - Why Choose Us CSS
+** - Services CSS
+** - Services Details CSS
+** - Features CSS
+** - Features Details CSS
+** - Team CSS
+** - Works CSS
+** - Fun Facts CSS
+** - Pricing CSS
+** - Domain Search CSS
+** - Feedback CSS
+** - Ready To Talk CSS
+** - Partner CSS
+** - Blog CSS
+** - Shop CSS
+** - Shop Details CSS
+** - Cart CSS
+** - Checkout CSS
+** - Page Title CSS
+** - FAQ CSS
+** - Pagination CSS
+** - Blog Details CSS
+** - Project Details CSS
+** - Contact CSS
+** - Coming Soon CSS
+** - 404 Error CSS
+** - CTA CSS
+** - Footer CSS
+** - Go Top CSS
+*/
+/*================================================
+Default CSS
+=================================================*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+img {
+  max-width: 100%;
+}
+
+a:hover,
+a:focus {
+  color: #0b73bb;
+  text-decoration: none;
+}
+
+/*btn btn-primary*/
+.btn-primary {
+  color: #ffffff;
+  backgroundcolor: #0b73bb;
+  -webkit-box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  color: #ffffff;
+  background: #0e314c;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary .show > .btn-primary.dropdown-toggle:focus {
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary .show > .btn-primary.dropdown-toggle {
+  color: #ffffff;
+  background: #0e314c;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #ffffff;
+  backgroundcolor: #0b73bb;
+  -webkit-box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+  opacity: 1;
+}
+
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary:disabled:hover,
+.btn-primary:disabled:focus {
+  background: #0e314c;
+  -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  padding: 15px 40px;
+  position: relative;
+  border-radius: 4px;
+  z-index: 1;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #b4b4b0;
+  z-index: -1;
+}
+
+.btn::after {
+  left: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.btn::before {
+  right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.btn:hover::after,
+.btn:hover::before {
+  width: 50%;
+}
+
+/*================================================
+Domain Search CSS
+=================================================*/
+
+.header-class .header {
+  display: none;
+}
+
+.header {
+  position: sticky;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-class .header {
+    display: block;
+  }
+}
+
+.header-class .hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-class .hamburger {
+    display: block;
+  }
+}
+
+.domain-search-content ul {
+  padding: 0;
+  margin: 30px 0 0;
+  list-style-type: none;
+  display: block;
+  width: 100%;
+}
+
+.domain-search-content ul li {
+  clear: both;
+  width: 100%;
+}
+
+.domain-search-content ul li:first-child {
+  border-left: none;
+}

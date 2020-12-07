@@ -1,0 +1,397 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: "Open Sans";
+}
+
+.headline {
+  text-align: center;
+  background: linear-gradient(to top, #ff5370, #ff595a);
+
+  font-size: 110%;
+  /* padding: 1em; */
+  color: white;
+  padding: 0.8em 0;
+}
+
+/* container layout begin */
+
+.pageComponents {
+  display: inline-flex;
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.noteListContainer {
+  position: relative;
+
+  margin: 1em 0em;
+  padding: 1em 0em 1em 0em;
+  flex-basis: 30%;
+  text-align: left;
+  /* overflow-y: auto;
+      overflow-x: hidden;
+      height: 70vh; */
+  order: 1;
+  flex-shrink: 1;
+}
+
+.editorContainer {
+  margin: 0em;
+  padding: 2em;
+  border-left: #f6f7fb solid 2px;
+  color: #2c3a51;
+  text-align: left;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  order: 2;
+  height: 100vh;
+  flex: 1 1 auto;
+  flex-basis: 60%;
+  min-width: 60%;
+  max-width: 100%;
+  background: #fbfafa;
+  align-items: center;
+  align-self: stretch;
+}
+
+/* container layout end */
+
+/* note list style begin  */
+
+.note-list-header {
+  font-size: 20px;
+  text-align: center;
+  padding: 1.5em 1em;
+  margin: 0.75em;
+  color: #585656;
+  position: sticky;
+  top: 0;
+  align-items: center;
+}
+
+.note-list {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 68vh;
+  margin: 0.5em 0 0.5em 0.5em;
+}
+
+.note-list-item {
+  padding: 1.1em;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  border-bottom: #f5efef solid 1px;
+  min-height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #484545;
+}
+
+.note-list-item:hover {
+  background: #fbf1f1;
+}
+
+/* note list style end  */
+
+.aboveEditor {
+  font-size: 1.25em;
+  text-align: left;
+}
+
+input[type="text"].noteTitle {
+  font-size: 14.5px;
+  line-height: 20px;
+  height: 20px;
+  letter-spacing: 0.7px;
+  font-family: "Open Sans";
+  border-bottom: #f6f7fb solid 2px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 80%;
+  position: inline;
+  padding: 0.5em;
+  margin-left: 0.6em;
+}
+
+.tool-bar {
+  border: #f6f7fb solid 2px;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  backgroundcolor: #dedcdc;
+  margin: 0.5em 0.5em 0em 0.5em;
+  padding: 0.5em;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.editors {
+  border: none;
+  border-radius: 4px;
+  padding: 1em 1.5em 3em 1.5em;
+  margin: -0.2em 0.6em 0em 0.6em;
+  font-family: "Arial";
+  line-height: 1.4;
+  color: #2c3a51;
+  font-size: 15px;
+  text-align: left;
+  backgroundcolor: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  min-height: 36%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  height: 55vh;
+}
+
+/* button styles begin  */
+
+.code-block,
+div.code-block {
+  color: #90caf9;
+  line-height: 1.2;
+  padding: 3px;
+  margin-left: 4px;
+  backgroundcolor: black;
+  font-family: "Andale Mono";
+  font-size: 13px;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+  display: block;
+}
+
+.styleButton,
+#link_url,
+.RichEditor-styleButton {
+  padding: 6px 12px;
+  background: white;
+  border: none;
+  color: #ff595a;
+  margin: 0.35em;
+  max-width: 35px;
+  min-width: 30px;
+  font-weight: bold;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13px;
+  height: 2.25em;
+}
+.mdButton {
+  font-weight: bold;
+  background: white;
+  border: none;
+  color: #ff595a;
+  margin: 0.35em;
+  position: inline;
+  max-width: 35px;
+  min-width: 30px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13px;
+  height: 2.25em;
+}
+
+.hidden {
+  display: none;
+}
+
+.imButton {
+  font-weight: bold;
+  background: #303030;
+  border: none;
+  color: white;
+  margin: 0.35em;
+  position: inline;
+  max-width: 35px;
+  min-width: 30px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13px;
+  height: 2.25em;
+  float: left;
+}
+
+.imButton:hover {
+  background: #585858;
+}
+.imButtonRight:hover {
+  background: #585858;
+}
+
+.imButtonRight {
+  font-weight: bold;
+  background: #303030;
+  border: none;
+  color: white;
+  margin: 0.35em;
+  position: inline;
+  max-width: 60px;
+  min-width: 35px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13px;
+  height: 2.25em;
+  float: right;
+}
+
+.RichEditor-activeButton {
+  backgroundcolor: #feb47b;
+  color: white;
+}
+
+select {
+  padding: 0.5em;
+  background: white;
+  border: none;
+  margin: 0.35em;
+  border-radius: 6px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13px;
+  height: 2.25em;
+}
+
+#bold,
+#italic,
+#underline {
+  width: 30px;
+}
+
+#code {
+  font-family: "Andale Mono", monospace;
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+}
+
+.styleButton#bold {
+  font-weight: 800;
+}
+
+.styleButton#italic {
+  font-style: italic;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.styleButton#underline {
+  text-decoration: underline;
+}
+
+.photo-uploaded {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.photo-container {
+  position: relative;
+  width: 95%;
+  margin: 2.5%;
+}
+
+.cropperFull {
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+}
+
+.photo-container img {
+  width: 100%;
+  vertical-align: top;
+}
+.photo-container:after {
+  content: "\A";
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(38, 38, 38, 0.6);
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.photo-container:hover:after {
+  opacity: 1;
+}
+
+.photo-container .close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 100;
+  font-size: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.images-container {
+  height: 500px;
+  width: 400px;
+}
+
+.middle {
+  transition: 0.5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 100;
+  font-size: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+#navi,
+#infoi {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#infoi {
+  z-index: 10;
+}
+
+.photo-container:hover .image {
+  opacity: 0.3;
+}
+
+.photo-container:hover .middle {
+  opacity: 1;
+}
+
+.middle:hover {
+  background: black;
+}
+
+.close:hover {
+  background: black;
+}
+.photo-container:hover .close {
+  opacity: 1;
+}
+
+.material-icons {
+  font-size: 13px;
+}
+/* button styles end */

@@ -1,0 +1,52 @@
+.recommended {
+  height: 750px;
+  width: 30%;
+  border: 1px solid black;
+  margin-left: 30%;
+  overflow: scroll;
+}
+
+.grey {
+  backgroundcolor: #f2f5f6;
+}
+
+.main-color {
+  backgroundcolor: #2eb692;
+}
+
+.logo {
+  width: 250px;
+  cursor: pointer;
+}
+
+.imgStyle {
+  transform: "translateY(-50%)";
+  position: "relative";
+  left: "0px";
+  height: "auto";
+  width: "100%";
+  top: "50%";
+}
+
+.gridList {
+  width: 80%;
+  overflow-y: auto;
+  overflow: hidden;
+}
+
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-hover {
+  transform: translateY(0.55em);
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.card-hover:hover {
+  box-shadow: 0 0.25rem 2rem -0.5rem rgba(28, 75, 102, 0.3);
+  transform: translateY(-0.55em);
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}

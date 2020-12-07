@@ -1,0 +1,241 @@
+/*
+@File: StartP React Template Styles
+
+* This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+
+This files table contents are outlined below>>>>>
+
+*******************************************
+*******************************************
+
+** - Default CSS
+** - Preloader CSS
+** - Navbar CSS
+** - Main Banner CSS
+** - Boxes CSS
+** - About CSS
+** - Why Choose Us CSS
+** - Services CSS
+** - Services Details CSS
+** - Features CSS
+** - Features Details CSS
+** - Team CSS
+** - Works CSS
+** - Fun Facts CSS
+** - Pricing CSS
+** - Domain Search CSS
+** - Feedback CSS
+** - Ready To Talk CSS
+** - Partner CSS
+** - Blog CSS
+** - Shop CSS
+** - Shop Details CSS
+** - Cart CSS
+** - Checkout CSS
+** - Page Title CSS
+** - FAQ CSS
+** - Pagination CSS
+** - Blog Details CSS
+** - Project Details CSS
+** - Contact CSS
+** - Coming Soon CSS
+** - 404 Error CSS
+** - CTA CSS
+** - Footer CSS
+** - Go Top CSS
+*/
+
+/*================================================
+Repair Services CSS
+=================================================*/
+.repair-services-area {
+  padding-bottom: 50px;
+}
+
+.single-repair-services {
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  padding: 40px 30px;
+  text-align: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* 
+  .single-repair-services.bg1 {
+    background-image: url(../images/repair-services-img/1.jpg);
+  }
+  
+  .single-repair-services.bg2 {
+    background-image: url(../images/repair-services-img/2.jpg);
+  }
+  
+  .single-repair-services.bg3 {
+    background-image: url(../images/repair-services-img/3.jpg);
+  }
+  
+  .single-repair-services.bg4 {
+    background-image: url(../images/repair-services-img/4.jpg);
+  }
+  
+  .single-repair-services.bg5 {
+    background-image: url(../images/repair-services-img/5.jpg);
+  }
+  
+  .single-repair-services.bg6 {
+    background-image: url(../images/repair-services-img/6.jpg);
+  } */
+
+.single-repair-services::before {
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: -1;
+  border: 1px dashed #bfdaed;
+}
+
+.single-repair-services::after {
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(9, 94, 150, 0.849) 0%, #82b7dd 100%);
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  border: 1px dashed #bfdaed;
+}
+
+.single-repair-services h3 {
+  font-size: 18px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 22px;
+  margin-bottom: 17px;
+}
+
+.single-repair-services .icon {
+  display: inline-block;
+  color: #0b73bb;
+  width: 85px;
+  font-size: 30px;
+  height: 85px;
+  line-height: 85px;
+  border: 1px solid #bfdaed;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single-repair-services .icon i::before {
+  font-size: 35px;
+}
+
+.single-repair-services p {
+  margin-bottom: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single-repair-services a {
+  width: 35px;
+  backgroundcolor: #f9fafb;
+  height: 35px;
+  line-height: 35px;
+  color: #0e314c;
+  border-radius: 50%;
+}
+
+.single-repair-services a svg {
+  width: 15px;
+}
+
+.single-repair-services:hover::before,
+.single-repair-services:focus::before {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.single-repair-services:hover::after,
+.single-repair-services:focus::after {
+  opacity: 0.85;
+  visibility: visible;
+}
+
+.single-repair-services:hover h3,
+.single-repair-services:focus h3 {
+  color: #ffffff;
+}
+
+.single-repair-services:hover p,
+.single-repair-services:focus p {
+  color: #ffffff;
+}
+
+.single-repair-services:hover .icon,
+.single-repair-services:focus .icon {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.single-repair-services:hover a,
+.single-repair-services:focus a {
+  backgroundcolor: #ffffff;
+  color: #0b73bb;
+}
+
+/*================================================
+  Repair CTA CSS
+  =================================================*/
+.repair-cta-area {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cta-repair-content p {
+  color: #ffffff;
+  opacity: 0.95;
+  margin-bottom: 25px;
+}
+
+.cta-repair-content h3 {
+  color: #ffffff;
+  font-size: 25px;
+  margin-bottom: 17px;
+}
+
+.cta-repair-img {
+  text-align: right;
+}
+
+.circle-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.cta-shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
